@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
     description = "Functional programming language with dependent types";
     homepage    = "http://www.ats-lang.org";
     license     = licenses.gpl3Plus;
-    platforms   = platforms.linux;
+    platforms   = platforms.linux ++ platforms.darwin;
     maintainers = with maintainers; [ thoughtpolice ttuegel bbarker ];
   };
 }
